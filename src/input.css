@@ -1,0 +1,98 @@
+@import "tailwindcss";
+
+:root {
+  /* COLORS */
+  --primary-color: #ffffff;
+  --secondary-color: #15357a;
+  --accent-color-1: #5bb8f1;
+  --accent-color-2: #60aef0;
+  --accent-color-3: #4f80ef;
+
+  /* FONTS */
+  --primary-font: "Montserrat Alternates", sans-serif;
+
+  /* --btn-background-color: ; */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ------------------------ */
+/* GENERAL STYLES */
+/* ------------------------ */
+
+html {
+  overflow-x: hidden !important;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #06122c;
+  background-image: linear-gradient(
+    132.98deg,
+    rgba(47, 129, 174, 0.6) 28.43%,
+    rgba(92, 62, 188, 0.6) 110.85%
+  );
+  background-color: red;
+  font-weight: 400;
+  overflow-x: hidden !important;
+}
+
+.lato {
+  font-family: "Lato", sans-serif;
+}
+/* Disable dargable images */
+
+img {
+  -webkit-user-drag: none; /* Safari */
+  -khtml-user-drag: none; /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -webkit-user-select: none; /* Chrome, Safari */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Standard syntax */
+}
+
+/* .logo{
+  @apply flex   items-center justify-center gap-2 ;
+  img{
+    @apply  block;
+  }
+}
+
+/* .nav-item{
+  
+} */
+*/
+
+
+/* UTILITIES */
+.center-children {
+  padding-left: 4vw !important;
+  padding-right: 4vw !important;
+}
+
+.grid-2-cols {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 6rem;
+}
+
+.grid-3-cols {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+}
+
+.grid-4-cols {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  align-items: center;
+}
+
+.grid-5-cols {
+  @apply grid grid-cols-5 items-center;
+}

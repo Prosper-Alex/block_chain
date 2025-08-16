@@ -8,6 +8,7 @@
   --accent-color-2: #60aef0;
   --accent-color-3: #4f80ef;
 
+  /* button gradient */
   /* FONTS */
   --primary-font: "Montserrat Alternates", sans-serif;
 
@@ -31,12 +32,7 @@ html {
 body {
   font-family: "Inter", sans-serif;
   color: #06122c;
-  background-image: linear-gradient(
-    132.98deg,
-    rgba(47, 129, 174, 0.6) 28.43%,
-    rgba(92, 62, 188, 0.6) 110.85%
-  );
-
+  background: radial-gradient(circle at top left, #1a2b4d, #0d1028);
   font-weight: 400;
   overflow-x: hidden !important;
 }
@@ -76,7 +72,6 @@ img {
 
 .grid-2-cols {
   @apply grid grid-cols-2 items-center;
-  
 }
 
 .grid-3-cols {
@@ -89,4 +84,31 @@ img {
 
 .grid-5-cols {
   @apply grid grid-cols-5 items-center;
+}
+
+/* NAVIGATION */
+
+.navigation {
+  @apply flex align-middle justify-between text-white px-25 py-8;
+}
+
+.navigation .nav_lists {
+  /* display: flex;
+  gap: 1.5rem;
+  list-style: none; */
+  @apply flex gap-12 list-none;
+}
+
+/* Header Hero */
+.hero {
+  @apply px-25;
+}
+
+.hero_paragraph {
+  color: var(--accent-color-1);
+}
+
+.hero-btn {
+  @apply px-10 py-4 mt-3 mb-3 rounded-3xl;
+  background: linear-gradient(90deg, #2d63db 0%, #3048a5 82%);
 }

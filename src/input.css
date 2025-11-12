@@ -99,7 +99,9 @@ img {
   @apply flex gap-12 list-none;
 }
 
+
 /* Header Hero */
+
 .hero {
   @apply px-25;
 }
